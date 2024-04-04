@@ -29,6 +29,7 @@ To install the required dependencies, run:
 
 ```bash
 pip install psycopg2
+```
 2. Create Virtual Environment (Optional)
 It's recommended to use a virtual environment to manage dependencies and isolate the project environment:
 
