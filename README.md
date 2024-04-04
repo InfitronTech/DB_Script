@@ -18,8 +18,8 @@ The `fetch_data.py` script connects to a PostgreSQL database, retrieves data bas
 
 ## Requirements
 
-- Python 3.x
-- psycopg2 library (for PostgreSQL database connection)
+- `Python 3.x`
+- `psycopg2` library (for PostgreSQL database connection)
 
 ## Setup
 
@@ -28,45 +28,36 @@ The `fetch_data.py` script connects to a PostgreSQL database, retrieves data bas
 To install the required dependencies, run:
 
 ```
-bash
 pip install psycopg2
 ```
 ### 2. Create Virtual Environment (Optional)
 It's recommended to use a virtual environment to manage dependencies and isolate the project environment:
 
-Install virtualenv if you haven't already:
+- Install virtualenv if you haven't already:
+```pip install virtualenv```
 
-bash
-Copy code
-pip install virtualenv
-Create a new virtual environment:
+- Create a new virtual environment:
+`virtualenv venv`
 
-bash
-Copy code
-virtualenv venv
-Activate the virtual environment:
+- Activate the virtual environment:
 
 On Windows:
-bash
-Copy code
-venv\Scripts\activate
-On macOS and Linux:
-bash
-Copy code
-source venv/bin/activate
-Usage
-Run the script:
+`venv\Scripts\activate`
 
-bash
-Copy code
-python fetch_data.py
+On macOS and Linux:
+`source venv/bin/activate`
+
+## Usage
+Run the script:
+`python fetch_data.py`
+
 The script connects to the database, fetches data based on the names provided in names.txt, and exports the fetched data to data.json.
 
-Additional Notes
-Modify the database connection parameters (dbname, user, password, host) in the script according to your PostgreSQL database configuration.
+## Additional Notes
+- Modify the database connection parameters (`dbname`, `user`, `password`, `host`) in the script according to your PostgreSQL database configuration.
 
-Customize the input source for names by uncommenting the relevant section in the script (reading from a CSV file or directly from code).
+- Customize the input source for names by uncommenting the relevant section in the script (reading from a CSV file or directly from code).
 
-Ensure proper permissions to read from names.txt and write to data.json.
+- Ensure proper permissions to read from names.txt and write to data.json.
 
-Handle errors that may occur during database connection, query execution, or file operations.
+- Handle errors that may occur during database connection, query execution, or file operations.

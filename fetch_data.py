@@ -7,7 +7,7 @@ def fetch_data(names):
     conn = psycopg2.connect(
         dbname='mayan',
         user='mayan',
-        password='mayandbpass',
+        password='password',
         host='192.168.100.36'
     )
     cursor = conn.cursor()
