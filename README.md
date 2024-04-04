@@ -27,7 +27,8 @@ The `fetch_data.py` script connects to a PostgreSQL database, retrieves data bas
 
 To install the required dependencies, run:
 
-```bash
+```
+bash
 pip install psycopg2
 ```
 2. Create Virtual Environment (Optional)
